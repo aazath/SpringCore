@@ -1,0 +1,15 @@
+package in.ineuron.main;
+
+public class SetterInjection {
+
+	public static void main(String[] args) {
+		//Activating the IOC container(XmlBeanFactory)
+		
+		//Getting the  bean from the container
+		
+		//using the bean
+		
+		//closing the  container
+	}
+
+}

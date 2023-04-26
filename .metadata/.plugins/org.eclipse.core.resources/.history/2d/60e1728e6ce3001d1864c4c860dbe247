@@ -1,0 +1,9 @@
+package in.ineuron.comp;
+
+import java.util.Set;
+
+public class EnggSubjects {
+	private Set<String>  subjects;
+	
+	
+}

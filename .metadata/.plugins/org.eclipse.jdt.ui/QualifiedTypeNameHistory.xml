@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.function.IntToDoubleFunction"/>
+    <fullyQualifiedTypeName name="com.apple.eawt.event.GestureUtilities"/>
+    <fullyQualifiedTypeName name="in.ineuron.comp.WishMessageGenerator"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.core.io.FileSystemResource"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanFactory"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="in.ineuron.comp.Student"/>
+    <fullyQualifiedTypeName name="in.ineuron.comp.ICourier"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean.StatefulMethodInvokingJob"/>
+    <fullyQualifiedTypeName name="in.ineuron.comp.BlueDart"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.ListableBeanFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.support.DefaultListableBeanFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanDefinitionReader"/>
+    <fullyQualifiedTypeName name="in.ineuron.comp.Flipcart"/>
+    <fullyQualifiedTypeName name="javax.xml.bind.ParseConversionEvent"/>
+    <fullyQualifiedTypeName name="java.lang.Float"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,8 @@
+package in.ineuron.comp;
+
+public interface ICourier {
+	@Override
+	public String deliver(int oid) {
+		
+	}
+}

@@ -1,0 +1,22 @@
+package in.ineuron.main;
+
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
+
+import in.ineuron.comp.Flipcart;
+
+public class TestApp {
+	public static void main(String[] args) {
+
+		DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
+		XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
+		reader.loadBeanDefinitions("in/ineuron/cfg/applicationContext.xml");
+
+		System.out.println("Container Started");
+
+		Flipcart fkart = (Flipcart) factory.getBean("fkart", Flipcart.class);
+		System.out.println(fkart);
+		fkart.doShopping(new String[] {"Tissot","Titan"}, new  float[]{34892.0f,34562.4f});
+
+	}
+}

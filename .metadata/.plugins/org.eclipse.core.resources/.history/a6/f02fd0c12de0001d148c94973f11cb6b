@@ -1,0 +1,11 @@
+package in.ineuron.comp;
+
+//Target object
+public class Flipcart {
+	
+	//Dependent  Object
+	private ICourier courier;
+	private Float discount;
+	
+	
+}

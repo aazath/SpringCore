@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="coreSubjects" class="in.ineuron.comp.EnggSubjects" abstract="true">
+<property name="subjects">
+	<set merge="true">
+		<value>MEngg</value>
+		<value>Drawing</value>
+		<value>CAD</value>
+	</set>
+</property>
+</bean>
+
+<bean id="CS" class="in.ineuron.comp.EnggSubjects" parent="coreSubjects">
+<property name="subjects">
+	<set>
+		<value>DSA</value>
+		<value>C++</value>
+		<value>Cryptography</value>
+	</set>
+</property>
+</bean>
+
+</beans>

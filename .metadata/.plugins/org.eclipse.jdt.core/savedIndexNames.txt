@@ -1,0 +1,19 @@
+INDEX VERSION 1.131+/Users/aazath/Documents/SpringCore/.metadata/.plugins/org.eclipse.jdt.core
+4102785113.index
+2579726338.index
+1249363177.index
+1865797976.index
+35950273.index
+2220924733.index
+2095160754.index
+1164280563.index
+1763667001.index
+4001765969.index
+2508124973.index
+708468891.index
+585394650.index
+3306618219.index
+2994113984.index
+1320463733.index
+2143885247.index
+1203658544.index

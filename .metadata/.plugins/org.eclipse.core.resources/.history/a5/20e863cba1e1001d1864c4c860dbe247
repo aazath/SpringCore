@@ -1,0 +1,22 @@
+package in.ineuron.dao;
+
+import javax.activation.DataSource;
+
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+
+import in.ineuron.bo.CustomerBO;
+
+public class CustomerMySQLDAOImpl implements ICustomerDAO {
+
+	private DataSource dataSource;
+	
+	public CustomerMySQLDAOImpl(DataSource dataSource) {
+		this.dataSource = dataSource;
+	}
+	@Override
+	public int save(CustomerBO bo) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

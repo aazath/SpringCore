@@ -1,0 +1,23 @@
+package in.ineuron.comp;
+
+//Target object
+public class Flipcart {
+	
+	//Dependent  Object
+	private ICourier courier;
+	private Float discount;
+	
+	
+	public Flipcart() {
+		
+	}
+	public void setCourier(ICourier courier) {
+		this.courier = courier;
+	}
+	public void setDiscount(Float discount) {
+		this.discount = discount;
+	}
+	
+	
+	
+}

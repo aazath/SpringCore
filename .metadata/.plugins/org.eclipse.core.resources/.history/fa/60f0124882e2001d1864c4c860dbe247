@@ -1,0 +1,20 @@
+package in.ineuron.main;
+
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
+
+import in.ineuron.comp.Flipcart;
+import in.ineuron.comp.MarksInfo;
+
+public class TestApp {
+	public static void main(String[] args) {
+
+		DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
+		XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
+		reader.loadBeanDefinitions("in/ineuron/cfg/applicationContext.xml");
+
+		System.out.println("Container Started");
+		MarksInfo info = factory.getBean("marks", MarksInfo.class);
+		System.out.println(info);
+	}
+}

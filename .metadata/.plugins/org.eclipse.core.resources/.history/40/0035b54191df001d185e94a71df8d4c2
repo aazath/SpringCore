@@ -1,0 +1,13 @@
+package in.ineuron.main;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.core.io.FileSystemResource;
+
+public class TestApp {
+
+	public static void main(String[] args) {
+		FileSystemResource resource = new FileSystemResource("in/ineuron/cfg/applicationContext");
+		Beanfactory factory = new Beanfactory(resource);
+	}
+
+}

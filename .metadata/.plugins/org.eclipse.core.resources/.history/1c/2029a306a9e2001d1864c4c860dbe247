@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="sysDate" class="java.util.Date"/>
+	<bean id="dob" class="java.util.Date">
+		<property name="year" value="84"/>
+		<property name="month" value="01"/>
+		<property name="date" value="18"/>
+	</bean>
+	
+	<bean id="marks" class="in.ineuron.comp.MarksInfo">
+		<property name="marksInfo">
+			<array>
+				<value>100</value>
+				<value>87</value>
+				<value>92</value>
+				<value>91</value>
+			</array>
+		</property>
+	</bean>
+
+	<bean id="clg"  class="in.ineuron.comp.College">
+		<property name="studName">
+			<list>
+				<value>Sachin</value>
+				<value>Saurav</value>
+				<value>Rahul</value>
+				<value>Zaheer</value>
+			</list>
+		</property>
+		<property name="dateList">
+			<list>
+				<ref bean="sysDate"/>
+				<ref bean="dob"/>
+			</list>
+		</property>
+	</bean>
+<bean id="contact"  class="in.ineuron.comp.ContactsInfo">
+	<property name="phoneNumbers">
+		<set>
+			<value>99999999</value>
+			<value>88888888</value>
+			<value>66666666</value>
+		</set>
+	</property>
+	
+	
+	<property name="dates">
+		<set>
+			<ref bean="sysDate"/>
+			<ref bean="dob"/>
+		</set>
+	</property>
+</bean>
+
+<bean id="university" class="in.ineuron.comp.UniversityInfo">
+<property name="facultyDetails"></property>
+<property name="datesInfo"></property>
+
+
+</bean>
+</beans>

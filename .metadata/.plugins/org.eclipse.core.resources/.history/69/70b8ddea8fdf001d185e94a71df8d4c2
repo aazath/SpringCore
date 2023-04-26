@@ -1,0 +1,10 @@
+package in.ineuron.comp;
+
+public class Student {
+	private int sno;
+	private String sname;
+	private String saddress;
+	private float average;
+	
+	
+}

@@ -1,0 +1,23 @@
+package in.ineuron.comp;
+
+public class Student {
+	private int sno;
+	private String sname;
+	private String saddress;
+	private float average;
+	
+	public Student(int sno, String sname, String saddress, float average) {
+		this.sno = sno;
+		this.sname = sname;
+		this.saddress = saddress;
+		this.average = average;
+	}
+
+	public String toString() {
+		return "Student [sno=" + sno + ", sname=" + sname + ", saddress=" + saddress + ", average=" + average + "]";
+	}
+	
+	
+	
+	
+}

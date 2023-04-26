@@ -1,0 +1,35 @@
+package in.ineuron.comp;
+
+//Target object
+public class Flipcart {
+	
+	//Dependent  Object
+	private ICourier courier;
+	private Float discount;
+	
+	
+	public Flipcart() {
+		
+	}
+	public void setCourier(ICourier courier) {
+		this.courier = courier;
+	}
+	public void setDiscount(Float discount) {
+		this.discount = discount;
+	}
+	
+	//Business logic
+	private String doShopping(String[] items, Float[] prices) {
+		System.out.println("Flipcart.doShopping()");
+		System.out.println("implementation class is :"+courier.getClass().getName());
+		System.out.println("Discount amount "+ discount);
+		return "";
+	}
+	
+	public String toString() {
+		return "Flipcart [courier=" + courier + ", discount=" + discount + "]";
+	}
+	
+	
+	
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Configuring the beans -->
+	<!-- Client -> Controller -> Service -> DAO -> Data source -> Database -->
+
+	<!-- data source bean injected into DAO through setter method -->
+	<bean id="mysqlDAO"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name=""
+			value="" />
+		<property name="url" value="" />
+		<property name="username" value="" />
+		<property name="password" value="" />
+	</bean>
+
+	<!-- DAO layer -->
+	<bean id="customerDao" class="in.ineuron.dao.CustomerMySQLDAOImpl">
+		<constructor-arg name="dataSource" ref="mysqlDAO" />
+	</bean>
+	<!-- Service layer -->
+	<bean id="customerService"
+		class="in.ineuron.service.CustomerMgmntServiceImpl">
+		<constructor-arg name="dao" ref="customerDao" />
+	</bean>
+	<!-- Controller layer -->
+	<bean id="customerController"
+		class="in.ineuron.controller.MainController">
+		<constructor-arg name="service" ref="customerService" />
+	</bean>
+
+</beans>

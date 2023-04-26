@@ -1,0 +1,18 @@
+package in.ineuron.main;
+
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import in.ineuron.comp.EnggSubjects;
+import in.ineuron.comp.MarksInfo;
+
+public class TestApp {
+	public static void main(String[] args) {
+
+		ApplicationContext context = new ClassPathXmlApplicationContext("in/ineuron/cfg/applicationContext.xml");
+		EnggSubjects enggSubjects = context.getBean("CS", EnggSubjects.class);
+		System.out.println(enggSubjects);
+	}
+}

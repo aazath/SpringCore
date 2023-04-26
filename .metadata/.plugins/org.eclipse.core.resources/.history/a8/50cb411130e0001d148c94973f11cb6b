@@ -1,0 +1,10 @@
+package in.ineuron.comp;
+
+public class DTDC implements ICourier {
+
+	public String deliver(int oid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

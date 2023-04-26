@@ -1,0 +1,12 @@
+package in.ineuron.comp;
+
+public class DTDC implements ICourier {
+
+	static {
+		System.out.println("DTDC.class file is loading");
+	}
+	public String deliver(int oid) {
+		return null;
+	}
+
+}

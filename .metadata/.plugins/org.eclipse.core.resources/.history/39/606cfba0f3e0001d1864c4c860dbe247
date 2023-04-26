@@ -1,0 +1,13 @@
+package in.ineuron.bo;
+
+public class CustomerBO {
+
+	private String customerName;
+	private String customerAddress;
+
+	private Float pamt;
+	private Float rate;
+	private Float time;
+	
+	private Float interestAmount;
+}

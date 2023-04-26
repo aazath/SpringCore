@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="sysDate" class="java.util.Date">
+		
+	</bean>
+	<bean id="marks" class="in.ineuron.comp.MarksInfo">
+		<property name="marksInfo">
+			<array>
+				<value>100</value>
+				<value>87</value>
+				<value>92</value>
+				<value>91</value>
+			</array>
+		</property>
+	</bean>
+
+	<bean id="clg"  class="in.ineuron.comp.College">
+		<property name="studNames">
+			<list>
+				<value>Sachin</value>
+				<value>Saurav</value>
+				<value>Rahul</value>
+				<value>Zaheer</value>
+			</list>
+		</property>
+		<property name="dateList">
+			<list>
+				
+			</list>
+		</property>
+	</bean>
+
+</beans>

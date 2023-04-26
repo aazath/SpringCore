@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;in.ineuron.main.TestApp&apos; to &apos;UsingListableBeanFactory&apos;&#x0A;- Original project: &apos;IOC-Project-Autowiring-Constructor&apos;&#x0A;- Original element: &apos;in.ineuron.main.TestApp&apos;&#x0A;- Renamed element: &apos;in.ineuron.main.UsingListableBeanFactory&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestApp&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;in.ineuron.main{TestApp.java[TestApp" matchStrategy="1" name="UsingListableBeanFactory" qualified="false" references="true" similarDeclarations="false" stamp="1682440398694" textual="false" version="1.0"/>
+</session>

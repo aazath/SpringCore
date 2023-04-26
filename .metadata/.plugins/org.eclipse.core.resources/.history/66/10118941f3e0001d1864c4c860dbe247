@@ -1,0 +1,18 @@
+package in.ineuron.dto;
+
+public class CustomerDTO {
+	private String customerName;
+	private String customerAddress;
+	
+	private Float pamt;
+	private Float rate;
+	private Float time;
+	
+	
+	public CustomerDTO() {
+		
+	}
+	
+	
+	
+}

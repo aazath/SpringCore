@@ -1,0 +1,11 @@
+package in.ineuron.vo;
+
+public class CutomerVO {
+	private String customerName;
+	private String customerAddress;
+	private String pamt;
+	private String rate;
+	private String time;
+
+	
+}

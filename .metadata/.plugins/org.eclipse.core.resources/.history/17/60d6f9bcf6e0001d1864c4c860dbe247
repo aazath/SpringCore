@@ -1,0 +1,13 @@
+package in.ineuron.service;
+
+import in.ineuron.dto.CustomerDTO;
+
+public class CustomerMgmntServiceImpl implements ICustomerMgmntService {
+
+	@Override
+	public String calculateSimpleInterest(CustomerDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

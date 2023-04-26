@@ -1,0 +1,12 @@
+package in.ineuron.comp;
+
+import java.util.Date;
+
+public class WishMessageGenerator {
+	
+	//Target component
+	private Date date;
+	
+	
+
+}

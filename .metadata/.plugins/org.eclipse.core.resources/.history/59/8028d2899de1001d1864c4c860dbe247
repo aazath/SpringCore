@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- Configuring the beans -->
+	<!-- Client -> Controller -> Service -> DAO -> Data source -> Database -->
+
+	<!-- data source bean injected into DAO through setter method -->
+	<bean id="mysqlDAO"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"
+			value="com.mysql.cj.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql:///enterpirsejava" />
+		<property name="username" value="root" />
+		<property name="password" value="root1234" />
+	</bean>
+
+	<!-- DAO layer -->
+	<bean id="" class="">
+		<constructor-arg name="" ref=""/>
+	</bean>
+	<!-- Service layer -->
+	<!-- Controller layer -->
+
+</beans>

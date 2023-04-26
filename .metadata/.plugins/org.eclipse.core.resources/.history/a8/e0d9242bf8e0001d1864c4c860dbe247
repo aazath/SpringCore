@@ -1,0 +1,13 @@
+package in.ineuron.dao;
+
+import in.ineuron.bo.CustomerBO;
+
+public class CustomerMySQLDAOImpl implements ICustomerDAO {
+
+	@Override
+	public int save(CustomerBO bo) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

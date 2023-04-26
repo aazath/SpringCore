@@ -1,0 +1,18 @@
+package in.ineuron.controller;
+
+import in.ineuron.service.ICustomerMgmntService;
+import in.ineuron.vo.CutomerVO;
+
+public class MainController {
+	
+	private ICustomerMgmntService service;
+	
+	public MainController(ICustomerMgmntService service) {
+		this.service = service;
+	}
+
+	public String processCustomer(CutomerVO vo) throws Exception{
+		return null;
+		
+	}
+}

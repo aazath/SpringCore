@@ -1,0 +1,10 @@
+package in.ineuron.controller;
+
+import in.ineuron.vo.CutomerVO;
+
+public class MainController {
+	public String processCustomer(CutomerVO vo) throws Exception{
+		return null;
+		
+	}
+}
