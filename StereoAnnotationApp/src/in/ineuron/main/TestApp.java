@@ -1,0 +1,47 @@
+package in.ineuron.main;
+
+import java.util.Scanner;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import in.ineuron.controller.MainController;
+import in.ineuron.vo.CustomerVO;
+
+public class TestApp {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext factory = new ClassPathXmlApplicationContext("in/ineuron/cfg/applicationContext.xml");
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Enter the Customer Name :");
+		String cname = scanner.next();
+
+		System.out.println("Enter the Customer Address :");
+		String caddr = scanner.next();
+
+		System.out.println("Enter the Principle Amount :");
+		String pamnt = scanner.next();
+
+		System.out.println("Enter the Rate of Interest :");
+		String rate = scanner.next();
+
+		System.out.println("Enter the Time Period :");
+		String time = scanner.next();
+
+		CustomerVO customerVO = new CustomerVO();
+		customerVO.setCustomerName(cname);
+		customerVO.setCustomerAddress(caddr);
+		customerVO.setPamt(pamnt);
+		customerVO.setRate(rate);
+		customerVO.setTime(time);
+
+		MainController controller = factory.getBean(MainController.class);
+		try {
+			String result = controller.processCustomer(customerVO);
+			System.out.println(result);
+		} catch (Exception e) {
+			System.out.println("Internal problem occured, try again :"+e.getMessage());
+		}
+		scanner.close();
+	}
+}
